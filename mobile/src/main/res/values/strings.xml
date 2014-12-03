@@ -10,4 +10,7 @@
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
 
+    <!-- Splash Activity -->
+    <string name="login">Log In</string>
+    <string name="sigup">Sign Up</string>
 </resources>

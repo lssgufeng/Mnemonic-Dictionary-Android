@@ -1,4 +1,4 @@
-package com.utopiadevelopers.mnemonicdictionary;
+package com.utopiadevelopers.mnemonicdictionary.activity.com.utopiadevelopers.mnemonicdictionary.activity.viewhelper;
 
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
@@ -21,6 +21,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.utopiadevelopers.mnemonicdictionary.R;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.

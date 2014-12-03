@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="black" type="color">#000000</item>
+    <item name="utopia_blue" type="color">#2F8AE9</item>
+    <item name="utopia_grey" type="color">#D6D7D8</item>
+</resources>
