@@ -29,11 +29,13 @@ import com.utopiadevelopers.mnemonicdictionary.helpers.CommonLib;
 /**
  * Created by satyamkrishna on 03/12/14.
  */
-public class LoginActivity extends FragmentActivity implements SignUpFragment.SignUpListener,LoginFragment.LoginListener
+public class LoginActivity extends FragmentActivity implements SignUpFragment.SignUpListener,LoginFragment.LoginListener,SignUpEmailFragment.SignUpEmailListener
 {
     private UtopiaApplication application;
     private SharedPreferences prefrences;
     private ProgressDialog pDialog;
+
+    private boolean isInsideFragment = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -48,18 +50,17 @@ public class LoginActivity extends FragmentActivity implements SignUpFragment.Si
 
         transaction.add(R.id.fragment_login_top, topFragment);
         transaction.add(R.id.fragment_login_bottom, botFragment);
-
         transaction.commit();
 
         application = (UtopiaApplication) getApplication();
         prefrences = getSharedPreferences(MyConfig.SHAREDPREFS, Context.MODE_PRIVATE);
+
     }
 
     @Override
     public void onButtonClick(View v)
     {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
         switch (v.getId())
         {
             case R.id.button_sign_facebook:
@@ -72,20 +73,16 @@ public class LoginActivity extends FragmentActivity implements SignUpFragment.Si
 
             case R.id.button_sign_email:
                 Fragment newSignUpFragment = new SignUpEmailFragment();
-
                 transaction.replace(R.id.fragment_login_bottom, newSignUpFragment);
-                transaction.addToBackStack(null);
-
                 transaction.commit();
+                isInsideFragment = true;
                 break;
 
             case R.id.button_login:
                 Fragment newLoginFragment = new LoginFragment();
-
                 transaction.replace(R.id.fragment_login_bottom, newLoginFragment);
-                transaction.addToBackStack(null);
-
                 transaction.commit();
+                isInsideFragment = true;
                 break;
 
             default:
@@ -125,11 +122,14 @@ public class LoginActivity extends FragmentActivity implements SignUpFragment.Si
                     {
                         authKey = response.getAuthCode();
                         SharedPreferences.Editor editor = prefrences.edit();
+                        editor.putBoolean(MyConfig.SHAREDPREFS_LOGGED_IN,true);
                         editor.putString(MyConfig.SHAREDPREFS_AUTHKEY, authKey);
                         editor.commit();
 
                         Intent i = new Intent(LoginActivity.this, DashboardActivity.class);
+                        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(i);
+                        finish();
                     }
                 }
             }, new Response.ErrorListener()
@@ -149,6 +149,29 @@ public class LoginActivity extends FragmentActivity implements SignUpFragment.Si
         else
         {
             Toast.makeText(this, "No Internet Connectivity", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    public void showInitalLoginView()
+    {
+        isInsideFragment = false;
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        Fragment newSignUpFragment = new SignUpFragment();
+        transaction.replace(R.id.fragment_login_bottom, newSignUpFragment);
+        transaction.commit();
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+        if(!isInsideFragment)
+        {
+            super.onBackPressed();
+        }
+        else
+        {
+            showInitalLoginView();
         }
     }
 }

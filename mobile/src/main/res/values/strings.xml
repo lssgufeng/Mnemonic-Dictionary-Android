@@ -16,7 +16,8 @@
     <string name="signup_google">Sign Up with Google</string>
     <string name="signup_facebook">Sign Up with Facebook</string>
     <string name="login">Log In</string>
-    <string name="sigup">Sign Up with Email</string>
+    <string name="sigup">Sign Up</string>
+    <string name="sigup_email">Sign Up with Email</string>
     <string name="or">OR</string>
     <string name="email">Email</string>
     <string name="password">Password</string>

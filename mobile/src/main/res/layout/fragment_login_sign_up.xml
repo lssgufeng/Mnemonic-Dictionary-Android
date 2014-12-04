@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/login_padding"
         android:background="@drawable/button_signup"
-        android:text="@string/sigup" />
+        android:text="@string/sigup_email" />
 
     <Button
         android:id="@+id/button_login"
