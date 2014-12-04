@@ -41,7 +41,6 @@ public class SignUpFragment extends Fragment implements View.OnClickListener
         {
             throw new ClassCastException(activity.toString() + " must implement SignUpListenerListener");
         }
-
     }
 
     @Override

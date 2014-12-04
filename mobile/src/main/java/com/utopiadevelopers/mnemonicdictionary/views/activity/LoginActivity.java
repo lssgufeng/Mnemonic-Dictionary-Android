@@ -16,7 +16,7 @@ import com.utopiadevelopers.mnemonicdictionary.helpers.CommonLib;
 /**
  * Created by satyamkrishna on 03/12/14.
  */
-public class LoginActivity extends FragmentActivity implements SignUpFragment.SignUpListener
+public class LoginActivity extends FragmentActivity implements SignUpFragment.SignUpListener,LoginFragment.LoginListener
 {
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -71,5 +71,11 @@ public class LoginActivity extends FragmentActivity implements SignUpFragment.Si
             default:
                 break;
         }
+    }
+
+    @Override
+    public void normalLoginWith(String email, String password)
+    {
+
     }
 }

@@ -3,7 +3,67 @@
     <item name="white" type="color">#FFFFFF</item>
     <item name="black" type="color">#000000</item>
     <item name="google_red" type="color">#DD4B39</item>
+    <item name="google_yellow" type="color">#F2B50F</item>
     <item name="utopia_blue" type="color">#2F8AE9</item>
     <item name="utopia_grey" type="color">#D6D7D8</item>
     <item name="seperatorColor" type="color">#D6D7D8</item>
+
+    <color name="theme_translucent">#a9a9a9</color>
+    <color name="transparent1">#00000000</color>
+    <color name="translucent_dark">#99000000</color>
+    <color name="translucent_darker">#AA000000</color>
+    <color name="translucent_dark2">#DD000000</color>
+    <color name="translucent_dark3">#CC000000</color>
+    <color name="translucent_dark_restaurant">#CC000000</color>
+    <color name="translucent_dark_ad">#88000000</color>
+    <color name="translucent_dark_toast">#aa000000</color>
+    <color name="login_activity_background">#dd000000</color>
+    <color name="transparent_white">#e5ffffff</color>
+    <color name="grey">#F3F3F3F3</color>
+    <color name="dark_grey">#aeaeae</color>
+
+    <!-- New shades of ZDark -->
+    <color name="zdark_1">#1a1a19</color>
+    <color name="zdark_2">#141411</color>
+    <color name="zdark_3">#0a0a09</color>
+
+    <color name="zhl">#f4f4f4</color>
+    <color name="zhl_light">#f8f8f8</color>
+    <color name="zhl_trans_fifty">#80f4f4f4</color>
+    <color name="zhl_trans_more">#18f4f4f4</color>
+    <color name="zhl_alpha">#99f4f4f4</color>
+    <color name="zhl_dark">#e4e4e4</color>
+    <color name="zhl_darker">#cbcbcb</color>
+    <color name="zhl_dark_trans_ninety">#e6e4e4e4</color>
+    <color name="zhl_darker_alpha">#99cbcbcb</color>
+    <color name="zhl_darkest">#9a9a9a</color>
+    <color name="zdhl6">#8D8D8D</color>
+    <color name="zdhl5">#7D7D7D</color>
+    <color name="zdhl4">#6D6D6D</color>
+    <color name="zdhl3">#5D5D5D</color>
+    <color name="zdhl2">#4D4D4D</color>
+    <color name="zdhl">#3D3D3D</color>
+    <color name="zdark">#2D2D2D</color>
+    <color name="zhl2">#e7e7e7</color>
+    <color name="zhl1.5">#EDEDED</color>
+    <color name="unread_notification">#fffced</color>
+    <color name="zdhl7">#CBCBCB</color>
+
+    <color name="black_trans_background">#60000000</color>
+    <color name="black_trans_ten">#1A000000</color>
+    <color name="black_trans_twenty">#33000000</color>
+    <color name="black_trans_forty">#66000000</color>
+    <color name="black_trans_thirty_five">#59000000</color>
+    <color name="black_trans_tour">#ba000000</color>
+    <color name="black_trans_home_button">#cc000000</color>
+    <color name="white_trans_ten">#22ffffff</color>
+    <color name="white_trans_thirty_five">#59ffffff</color>
+    <color name="white_trans_ninety">#e6ffffff</color>
+    <color name="white_trans_ninety_five">#f2ffffff</color>
+    <color name="white_trans_eighty">#baffffff</color>
+    <color name="white_trans_seventy">#a3ffffff</color>
+    <color name="white_trans_sixty">#91ffffff</color>
+    <color name="white_trans_forty">#5cffffff</color>
+    <color name="white_trans_fifty">#80ffffff</color>
+    <color name="white_trans_twenty">#33ffffff</color>
 </resources>

@@ -10,11 +10,11 @@
         android:id="@+id/fragment_login_top"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.35" />
+        android:layout_weight="0.3" />
 
     <RelativeLayout
         android:id="@+id/fragment_login_bottom"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.65" />
+        android:layout_weight="0.7" />
 </LinearLayout>
