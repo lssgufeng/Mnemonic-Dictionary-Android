@@ -1,4 +1,4 @@
-package com.utopiadevelopers.mnemonicdictionary.activity.fragment;
+package com.utopiadevelopers.mnemonicdictionary.views.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,11 +12,11 @@ import com.utopiadevelopers.mnemonicdictionary.R;
 /**
  * Created by satyamkrishna on 04/12/14.
  */
-public class fragment_login_app_logo extends Fragment
+public class LoginFragment extends Fragment
 {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
-        return inflater.inflate(R.layout.fragment_app_logo,container,false);
+        return inflater.inflate(R.layout.fragment_login_in,container,false);
     }
 }

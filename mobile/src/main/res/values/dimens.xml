@@ -4,12 +4,14 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="side_padding">50dp</dimen>
     <dimen name="side_padding_half">25dp</dimen>
+    <dimen name="seperator_height">1dp</dimen>
+
 
     <!-- Login Activity -->
 
     <dimen name="login_padding">10dp</dimen>
     <dimen name="login_button_padding">5dp</dimen>
-
+    <dimen name="or_size">30dp</dimen>
     <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
          https://developer.android.com/design/patterns/navigation-drawer.html -->
     <dimen name="navigation_drawer_width">240dp</dimen>

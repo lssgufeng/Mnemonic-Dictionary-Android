@@ -3,20 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
 
-    <fragment
+    <RelativeLayout
+        android:id="@+id/fragment_login_top"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.4"
-        android:name="com.utopiadevelopers.mnemonicdictionary.activity.fragment.fragment_login_app_logo"
-        tools:layout="@layout/fragment_app_logo" />
+        android:layout_weight="0.35" />
 
-    <fragment
+    <RelativeLayout
+        android:id="@+id/fragment_login_bottom"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.6"
-        android:name="com.utopiadevelopers.mnemonicdictionary.activity.fragment.fragment_login_sign_up"
-        tools:layout="@layout/fragment_login_sign_up" />
+        android:layout_weight="0.65" />
 </LinearLayout>

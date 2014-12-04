@@ -1,4 +1,4 @@
-package com.utopiadevelopers.mnemonicdictionary.activity.viewhelper;
+package com.utopiadevelopers.mnemonicdictionary.views.viewhelper;
 
 import android.content.Context;
 import android.graphics.Typeface;

@@ -17,4 +17,11 @@
     <string name="signup_facebook">Sign Up with Facebook</string>
     <string name="login">Log In</string>
     <string name="sigup">Sign Up with Email</string>
+    <string name="or">OR</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forgot your password?</string>
+    <string name="cancel">Cancel</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
 </resources>

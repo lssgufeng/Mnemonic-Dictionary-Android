@@ -5,4 +5,5 @@
     <item name="google_red" type="color">#DD4B39</item>
     <item name="utopia_blue" type="color">#2F8AE9</item>
     <item name="utopia_grey" type="color">#D6D7D8</item>
+    <item name="seperatorColor" type="color">#D6D7D8</item>
 </resources>

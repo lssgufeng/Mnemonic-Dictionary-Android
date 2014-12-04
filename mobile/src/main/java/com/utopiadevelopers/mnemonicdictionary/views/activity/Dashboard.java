@@ -1,4 +1,4 @@
-package com.utopiadevelopers.mnemonicdictionary.activity;
+package com.utopiadevelopers.mnemonicdictionary.views.activity;
 
 import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 
-import com.utopiadevelopers.mnemonicdictionary.activity.viewhelper.NavigationDrawerFragment;
+import com.utopiadevelopers.mnemonicdictionary.views.viewhelper.NavigationDrawerFragment;
 import com.utopiadevelopers.mnemonicdictionary.R;
 
 

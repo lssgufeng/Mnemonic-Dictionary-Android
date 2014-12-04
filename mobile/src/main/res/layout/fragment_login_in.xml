@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/side_padding"
+        android:paddingRight="@dimen/side_padding">
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/seperator_height"
+            android:layout_marginLeft="@dimen/side_padding_half"
+            android:layout_marginRight="@dimen/side_padding_half"
+            android:background="@color/utopia_grey" />
+
+        <Button
+            android:id="@+id/button_sign_facebook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/side_padding_half"
+            android:background="@drawable/button_facebook"
+            android:text="@string/login_facebook"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_sign_google"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_padding"
+            android:background="@drawable/button_google"
+            android:text="@string/login_google"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_padding">
+
+
+            <TextView
+                android:id="@+id/textViewOR"
+                android:layout_width="@dimen/or_size"
+                android:layout_height="@dimen/or_size"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_circle"
+                android:gravity="center"
+                android:text="@string/or"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/seperator_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/textViewOR"
+                android:layout_toStartOf="@+id/textViewOR"
+                android:background="@color/seperatorColor" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/seperator_height"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/textViewOR"
+                android:layout_toRightOf="@+id/textViewOR"
+                android:background="@color/seperatorColor" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_padding"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_padding"
+            android:hint="@string/password"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_padding"
+            android:background="@drawable/button_forgot"
+            android:text="@string/forgot" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
