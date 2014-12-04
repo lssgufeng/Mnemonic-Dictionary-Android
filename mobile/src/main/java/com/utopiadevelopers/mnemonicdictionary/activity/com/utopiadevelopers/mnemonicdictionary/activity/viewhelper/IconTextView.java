@@ -10,15 +10,31 @@ import android.widget.TextView;
  */
 public class IconTextView extends TextView
 {
-    public IconTextView(Context context, AttributeSet attrs, int defStyle)
-    {
-        super(context,attrs,defStyle);
-    }
 
     public IconTextView(Context context)
     {
         super(context);
-        Typeface myTypeface = Typeface.createFromAsset(context.getAssets(), "custom.ttf");
-        setTypeface(myTypeface);
+        setCustomFont(context);
+    }
+
+    public IconTextView(Context context, AttributeSet attrs)
+    {
+        super(context,attrs);
+        setCustomFont(context);
+    }
+
+    public IconTextView(Context context, AttributeSet attrs, int defStyleAttr)
+    {
+        super(context,attrs,defStyleAttr);
+        setCustomFont(context);
+    }
+
+    private void setCustomFont(Context context)
+    {
+        if(context!=null&&!isInEditMode())
+        {
+            Typeface myTypeface = Typeface.createFromAsset(context.getAssets(), "custom.ttf");
+            setTypeface(myTypeface);
+        }
     }
 }
