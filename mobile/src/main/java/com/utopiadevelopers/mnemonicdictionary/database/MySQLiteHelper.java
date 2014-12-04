@@ -89,7 +89,17 @@ public class MySQLiteHelper extends SQLiteOpenHelper
      * 		Open , Close , Transaction Methods
 	 */
 
-    public MySQLiteHelper(Context context)
+    private static MySQLiteHelper sqliteHelper;
+
+    public static synchronized MySQLiteHelper sharedDatabaseHelper(Context context)
+    {
+        if(sqliteHelper == null)
+           sqliteHelper = new MySQLiteHelper(context);
+        return sqliteHelper;
+    }
+
+
+    private MySQLiteHelper(Context context)
     {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }

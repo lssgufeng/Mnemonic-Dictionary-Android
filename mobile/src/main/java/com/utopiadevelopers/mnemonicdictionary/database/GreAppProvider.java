@@ -82,7 +82,7 @@ public class GreAppProvider extends ContentProvider
     @Override
     public boolean onCreate()
     {
-        dbHelper = new MySQLiteHelper(getContext());
+        dbHelper = MySQLiteHelper.sharedDatabaseHelper(getContext());
         dbHelper.open();
         return true;
     }
