@@ -70,7 +70,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener
                 String email_val = emailET.getText().toString();
                 String password_val = passwordET.getText().toString();
 
-
+                activityCallback.normalLoginWith(email_val,password_val);
 
                 break;
 

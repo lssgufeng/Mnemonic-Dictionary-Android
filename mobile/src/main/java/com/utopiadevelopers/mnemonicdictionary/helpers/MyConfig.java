@@ -17,6 +17,7 @@ public class MyConfig
     public static final String APP_DIRECTORY = "/utopiagre/";
 
     public static final String API_URL = "http://www.utopiadevelopers.com/gre/api/";
+    public static final String API_LOGIN = API_URL + "login.php?";
     public static final String API_GCM_REG = "register_gcm.php?";
     public static final String KEY_ERROR_MESSAGE = "ERR_MSG";
     public static final String PARAM_USER_PASS = "USER_PASS";

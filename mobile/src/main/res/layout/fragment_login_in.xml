@@ -113,31 +113,30 @@
         android:layout_height="@dimen/side_padding"
         android:layout_alignParentBottom="true"
         android:background="@drawable/border_top"
+        android:paddingBottom="@dimen/login_padding"
         android:paddingLeft="@dimen/side_padding_half"
         android:paddingRight="@dimen/side_padding_half"
-        android:paddingTop="@dimen/login_padding"
-        android:paddingBottom="@dimen/login_padding"
-        android:id="@+id/">
+        android:paddingTop="@dimen/login_padding">
 
         <Button
+            android:id="@+id/buttonCancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:background="@drawable/button_cancel"
             android:text="@string/cancel"
-            android:layout_alignParentLeft="true"
-            android:id="@+id/buttonCancel"
-            android:textSize="12sp"/>
+            android:textSize="12sp" />
 
         <Button
+            android:id="@+id/buttonLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:background="@drawable/button_login_cancel"
-            android:id="@+id/buttonLogin"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:textSize="12sp"/>
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/button_login_cancel"
+            android:text="@string/login"
+            android:textSize="12sp" />
 
     </RelativeLayout>
 

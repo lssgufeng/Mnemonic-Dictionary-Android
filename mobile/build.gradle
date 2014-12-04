@@ -32,4 +32,5 @@ dependencies {
     compile project(':facebook')
     compile 'com.google.code.gson:gson:2.2.4'
     compile project(':android-volley-master')
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
 }

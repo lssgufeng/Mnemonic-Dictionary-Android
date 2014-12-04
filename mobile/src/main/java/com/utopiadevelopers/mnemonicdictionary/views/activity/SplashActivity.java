@@ -30,7 +30,7 @@ public class SplashActivity extends Activity
                     Intent i =null;
                     if(CommonLib.isUserLoggedIn(SplashActivity.this))
                     {
-                        i = new Intent(SplashActivity.this, Dashboard.class);
+                        i = new Intent(SplashActivity.this, DashboardActivity.class);
                     }
                     else
                     {

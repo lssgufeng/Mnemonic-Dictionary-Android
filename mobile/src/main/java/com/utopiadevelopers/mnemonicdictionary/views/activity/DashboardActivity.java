@@ -17,7 +17,7 @@ import com.utopiadevelopers.mnemonicdictionary.views.viewhelper.NavigationDrawer
 import com.utopiadevelopers.mnemonicdictionary.R;
 
 
-public class Dashboard extends ActionBarActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks
+public class DashboardActivity extends ActionBarActivity implements NavigationDrawerFragment.NavigationDrawerCallbacks
 {
 
     /**
@@ -138,7 +138,7 @@ public class Dashboard extends ActionBarActivity implements NavigationDrawerFrag
         @Override
         public void onAttach(Activity activity) {
             super.onAttach(activity);
-            ((Dashboard) activity).onSectionAttached(
+            ((DashboardActivity) activity).onSectionAttached(
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
