@@ -2,6 +2,7 @@ package com.utopiadevelopers.mnemonicdictionary.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 
 import com.utopiadevelopers.mnemonicdictionary.R;
@@ -9,7 +10,7 @@ import com.utopiadevelopers.mnemonicdictionary.R;
 /**
  * Created by satyamkrishna on 03/12/14.
  */
-public class LoginActivity extends Activity implements View.OnClickListener
+public class LoginActivity extends FragmentActivity implements View.OnClickListener
 {
     @Override
     protected void onCreate(Bundle savedInstanceState)

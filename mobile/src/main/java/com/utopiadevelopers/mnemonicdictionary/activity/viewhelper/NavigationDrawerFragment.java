@@ -1,4 +1,4 @@
-package com.utopiadevelopers.mnemonicdictionary.activity.com.utopiadevelopers.mnemonicdictionary.activity.viewhelper;
+package com.utopiadevelopers.mnemonicdictionary.activity.viewhelper;
 
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
