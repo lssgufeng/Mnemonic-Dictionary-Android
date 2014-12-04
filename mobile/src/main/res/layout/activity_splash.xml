@@ -31,33 +31,4 @@
             android:textColor="@color/white"
             android:textSize="30dp" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button_login"
-        android:layout_alignEnd="@+id/button_login"
-        android:layout_alignLeft="@+id/button_login"
-        android:layout_alignRight="@+id/button_login"
-        android:layout_alignStart="@+id/button_login"
-        android:layout_marginBottom="@dimen/side_padding"
-        android:text="@string/sigup"
-        android:visibility="invisible"
-        android:background="@drawable/button_signup"/>
-
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/linearLayout"
-        android:layout_alignLeft="@+id/linearLayout"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/linearLayout"
-        android:layout_alignStart="@+id/linearLayout"
-        android:layout_marginBottom="@dimen/side_padding"
-        android:text="@string/login"
-        android:visibility="invisible"
-        android:background="@drawable/button_login"/>
-
 </RelativeLayout>

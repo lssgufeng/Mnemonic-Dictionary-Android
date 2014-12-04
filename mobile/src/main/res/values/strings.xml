@@ -10,7 +10,11 @@
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
 
-    <!-- Splash Activity -->
+    <!-- Login Activity -->
+    <string name="login_google">Log In with Google</string>
+    <string name="login_facebook">Log In with Facebook</string>
+    <string name="signup_google">Sign Up with Google</string>
+    <string name="signup_facebook">Sign Up with Facebook</string>
     <string name="login">Log In</string>
-    <string name="sigup">Sign Up</string>
+    <string name="sigup">Sign Up with Email</string>
 </resources>

@@ -18,67 +18,42 @@ import com.utopiadevelopers.mnemonicdictionary.helpers.CommonLib;
 /**
  * Created by satyamkrishna on 03/12/14.
  */
-public class SplashActivity extends Activity implements View.OnClickListener
+public class SplashActivity extends Activity
 {
-    public Button signupButton;
-    public Button loginButton;
-
-    @Override
-    protected void onResume()
-    {
-        super.onResume();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        signupButton = (Button) findViewById(R.id.button_signup);
-        loginButton  = (Button) findViewById(R.id.button_login);
 
-        if(CommonLib.isUserLoggedIn(this))
+        Thread t = new Thread(new Runnable()
         {
-
-        }
-        else
-        {
-            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-            LinearLayout app_logo = (LinearLayout) findViewById(R.id.linearLayout);
-            if(Build.VERSION.SDK_INT >= 12)
+            @Override
+            public void run()
             {
-                app_logo.animate().translationYBy(-150);
+                try
+                {
+                    Thread.sleep(1500);
+                    Intent i =null;
+                    if(CommonLib.isUserLoggedIn(SplashActivity.this))
+                    {
+                        i = new Intent(SplashActivity.this, Dashboard.class);
+                    }
+                    else
+                    {
+                        i = new Intent(SplashActivity.this,LoginActivity.class);
+                    }
+                    startActivity(i);
+                }
+                catch (Exception e)
+                {
+
+                }
             }
-            else
-            {
+        });
 
-            }
-
-            signupButton.setVisibility(View.VISIBLE);
-            loginButton.setVisibility(View.VISIBLE);
-
-            signupButton.setOnClickListener(this);
-            loginButton.setOnClickListener(this);
-
-        }
+        t.start();
     }
 
-    @Override
-    public void onClick(View v)
-    {
-        switch (v.getId())
-        {
-            case R.id.button_login:
-                Intent i1 = new Intent(this,LoginActivity.class);
-                startActivity(i1);
-                break;
-            case R.id.button_signup:
-                Intent i2 = new Intent(this,LoginActivity.class);
-                startActivity(i2);
-                break;
-            default:
-                break;
-        }
-    }
 }
