@@ -13,7 +13,7 @@ public class MyConfig
     public static final String SHAREDPREFS_AUTHKEY = "authkey";
     public static final String SHAREDPREFS_DOWNLOAD_ID = "json_download-id";
     public static final String SHAREDPREFS_DATABASE_ADDED = "is_database_added";
-    public static final String JSON_URL = "http://www.utopiadevelopers.com/gre/upload/A.txt";
+    public static final String JSON_URL = "http://www.utopiadevelopers.com/gre/upload/O.json";
     public static final String APP_DIRECTORY = "/utopiagre/";
 
     public static final String API_URL = "http://www.utopiadevelopers.com/gre/api/";
@@ -25,7 +25,7 @@ public class MyConfig
 
 
     // URI FOR CONTENT PROVIDERS - START
-    public static final String AUTHORITY = "com.utopiadevelopers.provider.Gre";
+    public static final String AUTHORITY = "com.utopiadevelopers.mnemonicdictionary.provider";
     public static final String URI_BASE = "content://";
     public static final String URI_INSERT_ALL_WORDS = "add_words_all";
     public static final String URI_FETCH_ALL_WORDS = "fetch_words_all";

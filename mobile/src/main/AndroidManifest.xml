@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".UtopiaApplication"
@@ -26,5 +27,13 @@
 
         <activity android:name=".views.activity.LoginActivity"></activity>
         <activity android:name=".views.activity.DashboardActivity"></activity>
+        <activity android:name=".views.activity.SetupActivity"></activity>
+
+
+        <provider
+            android:name="com.utopiadevelopers.mnemonicdictionary.database.GreAppProvider"
+            android:authorities="com.utopiadevelopers.mnemonicdictionary.provider"
+            android:exported="false" >
+        </provider>
     </application>
 </manifest>
